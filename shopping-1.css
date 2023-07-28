@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+.clearfix{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+
+.navigation{
+position: -webkit-sticky;
+position: sticky;
+    top: 0;
+   
+}
+
+a{
+    transition: transform 0.5s;
+}
+
+.images{
+    transition: 0.9s;
+    
+}
+
+.r-storby{
+    justify-content: flex-end;
+}
+
+@media (max-width:992px) {
+    .r-storby{
+        justify-content: flex-start;
+    }
+    
+}
+.heading{
+    position: absolute;
+    top: 1rem;
+    right:0px;
+    background-color: black;
+    color: white;
+    padding: 3px 7px;
+}
+
+.heading-2{
+    position: absolute;
+    top: 1rem;
+    right:0px;
+    background-color: #1bb2c0;
+    color: white;
+    padding: 3px 7px;
+}
+.images:hover{
+    
+    transition: 0.9s;
+}
+
+.icon{
+    opacity: 0;
+}
+
+.image-div:hover .icon{
+    opacity: 1;
+    transition: 0.9s;
+}
+.icon:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn-dark1 {
+    --bs-btn-color: black !important;
+    --bs-btn-bg: none !important;
+    --bs-btn-border-color: #212529 !important;
+    --bs-btn-hover-color: white !important;
+    --bs-btn-hover-bg: black !important;
+    --bs-btn-hover-border-color: black !important;
+    --bs-btn-focus-shadow-rgb: none !important;
+    --bs-btn-active-color: white !important;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: #373b3e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+
+.line-height{
+    line-height: 2rem;
+}
+
+
+
+.footer-icon{
+    justify-content: flex-end;
+  }
+
+  .footer-icon i{
+    padding: 2px;
+  
+  }
+
+  @media (max-width:576px) {
+    .footer-icon{
+        justify-content: flex-start;
+    }
+  }
